@@ -1,0 +1,30 @@
+#+TITLE: Promos
+:ticket: https://trello.com/c/KcXfoTmR
+
+
+* Failing specs
+
+#+begin_src sh
+rspec ./spec/controllers/admin/promotions_controller_spec.rb:90 # Admin::PromotionsController DELETE #destroy removes a promotion
+rspec ./spec/services/build_promo_codes_spec.rb:7 # BuildPromoCodes#perform creates one promo
+rspec ./spec/services/build_promo_codes_spec.rb:13 # BuildPromoCodes#perform argument is passed creates the number of promos
+rspec ./spec/services/build_promo_codes_spec.rb:21 # BuildPromoCodes#random_code creates a random code
+#+end_src
+
+
+** promotions controller
+
+*** relation delgate class error
+
+
+#+begin_src zsh :session *shell*
+be rspec ./spec/controllers/admin/promotions_controller_spec.rb:90 # Admin::PromotionsController DELETE #destroy removes a promotion
+
+#>>     NoMethodError:
+#>>       undefined method `relation_delegate_class' for PromotionCode:Class
+
+#+end_src
+
+**** solution
+:commit: fe38f
+Needed to add correct relation
