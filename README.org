@@ -1,0 +1,3 @@
+-*- mode: org; -*-
+* strangler-notes
+Notes for strangler
