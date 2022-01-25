@@ -1,3 +1,13 @@
--*- mode: org; -*-
 * strangler-notes
 Notes for strangler
+
+NOTE: You'll need emacs for a better experiece.  :)
+
+
+
+
+* How to
+
+** Rerun CI on git hub
+1. Go to the failed [[https://github.com/uriel1000bulbs/strangler/actions][workflow]].
+2. Click on re-run workflow button all the way on the right.
