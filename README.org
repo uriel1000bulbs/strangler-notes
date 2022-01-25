@@ -12,3 +12,13 @@ NOTE: You'll need emacs for a better experiece.  :)
 1. Go to the failed [[https://github.com/uriel1000bulbs/strangler/actions][workflow]].
 2. Click on re-run workflow button all the way on the right.
    [[file:img/rerun-workflow.png][rurn workflow]]
+
+
+** Git ignore
+
+#+begin_src sh
+# ┏━━━━━━━━━━━━━━━━━━     This "/" is the root of the git project
+  /strangler-notes/*    # ignore all files in dir
+  /strangler-notes      # ignore dir
+
+#+end_src
