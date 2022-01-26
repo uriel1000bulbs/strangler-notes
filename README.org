@@ -25,4 +25,22 @@ NOTE: You'll need emacs for a better experiece.  :)
 
 
 ** Create PRs
-   Go to https://github.com/1000Bulbs/strangler/pull and click on new pull request
+   Go to https://github.com/1000Bulbs/strangler/pull and click on new pull request button
+
+* Debugging
+** bundle install
+*** Problems with vendor/bundle
+#+begin_src quote
+Sorry, try again.
+
+
+Your user account isn't allowed to install to the system RubyGems.
+  You can cancel this installation and run:
+
+      bundle install --path vendor/bundle
+
+  to install the gems into ./vendor/bundle/, or you can enter your password
+  and install the bundled gems to RubyGems using sudo.
+
+#+end_src
+**** just enter your mac password?

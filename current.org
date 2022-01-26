@@ -4,7 +4,7 @@
 
 * Failing specs
 
-#+begin_src sh
+#+begin_src shell
 rspec ./spec/controllers/admin/promotions_controller_spec.rb:90 # Admin::PromotionsController DELETE #destroy removes a promotion
 rspec ./spec/services/build_promo_codes_spec.rb:7 # BuildPromoCodes#perform creates one promo
 rspec ./spec/services/build_promo_codes_spec.rb:13 # BuildPromoCodes#perform argument is passed creates the number of promos
@@ -41,3 +41,14 @@ a = PromotionCode.new( code: SecureRandom.hex(3), use_limit: 1)
 
 - Looks like the code was changed class
   - Yep, changed the PromotionCode  commit 8d748c
+
+
+
+* More failing specs Wed Jan 26 2022
+#+begin_src shell
+rspec './spec/models/cart_spec.rb[1:8:1:2:1]' # Cart behaves like coupon_discountable #promo_code for new promotions returns a new promo code model
+rspec './spec/models/checkout_spec.rb[1:24:1:2:1]' # Checkout behaves like coupon_discountable #promo_code for new promotions returns a new promo code model
+rspec ./spec/models/promotion_code_spec.rb:9 # PromotionCode#promotion
+rspec ./spec/models/promotion_code_spec.rb:14 # PromotionCode#overused?
+rspec ./spec/models/promotion_code_spec.rb:20 # PromotionCode#expired? asks the promotion
+#+end_src
