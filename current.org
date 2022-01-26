@@ -28,3 +28,16 @@ be rspec ./spec/controllers/admin/promotions_controller_spec.rb:90 # Admin::Prom
 **** solution
 :commit: fe38f
 Needed to add correct relation
+
+
+*** model not initalized
+
+#+begin_src ruby :session strangler-console :output results
+a = PromotionCode.new( code: SecureRandom.hex(3), use_limit: 1)
+#+end_src
+
+#+RESULTS:
+: #<PromotionCode id: nil, promotion_id: nil, code: "93b091", use_limit: 1, uses: nil, created_at: nil, updated_at: nil>
+
+- Looks like the code was changed class
+  - Yep, changed the PromotionCode
