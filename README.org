@@ -22,3 +22,7 @@ NOTE: You'll need emacs for a better experiece.  :)
   /strangler-notes      # ignore dir
 
 #+end_src
+
+
+** Create PRs
+   Go to https://github.com/1000Bulbs/strangler/pull and click on new pull request
