@@ -1,5 +1,5 @@
 #+TITLE: Promos
-:ticket: https://trello.com/c/KcXfoTmR
+ticket: https://trello.com/c/KcXfoTmR
 
 
 * Failing specs
@@ -75,3 +75,4 @@ The initalization method was deleted and the rails default was used
 **** Solution
 
 Use allow-receive pattern instead of using instance spies
+commit: 9f5f2b
