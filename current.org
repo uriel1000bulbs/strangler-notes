@@ -26,7 +26,7 @@ be rspec ./spec/controllers/admin/promotions_controller_spec.rb:90 # Admin::Prom
 #+end_src
 
 **** solution
-:commit: fe38f
+commit: fe38f
 Needed to add correct relation
 
 
@@ -73,6 +73,6 @@ The initalization method was deleted and the rails default was used
 #+end_src
 
 **** Solution
+commit: [[https://github.com/1000Bulbs/strangler/pull/2036/commits/daa7594069219406bf241bae8960c867489990bb][9f5f2b]]
 
 Use allow-receive pattern instead of using instance spies
-commit: 9f5f2b
