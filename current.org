@@ -40,4 +40,4 @@ a = PromotionCode.new( code: SecureRandom.hex(3), use_limit: 1)
 : #<PromotionCode id: nil, promotion_id: nil, code: "93b091", use_limit: 1, uses: nil, created_at: nil, updated_at: nil>
 
 - Looks like the code was changed class
-  - Yep, changed the PromotionCode
+  - Yep, changed the PromotionCode  commit 8d748c
