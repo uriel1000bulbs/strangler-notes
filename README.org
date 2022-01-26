@@ -44,3 +44,4 @@ Your user account isn't allowed to install to the system RubyGems.
 
 #+end_src
 **** just enter your mac password?
+[[./current.org]]
