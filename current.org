@@ -52,3 +52,26 @@ rspec ./spec/models/promotion_code_spec.rb:9 # PromotionCode#promotion
 rspec ./spec/models/promotion_code_spec.rb:14 # PromotionCode#overused?
 rspec ./spec/models/promotion_code_spec.rb:20 # PromotionCode#expired? asks the promotion
 #+end_src
+
+
+#+begin_src quote
+     ArgumentError:
+       When assigning attributes, you must pass a hash as an argument.
+
+   Failure/Error: let(:promo_code) { described_class.new(promotion) }
+#+end_src
+
+
+*** Solution
+The model was using an improper initalization method.
+The initalization method was deleted and the rails default was used
+
+*** After fixing model by adding promotion using the rails way
+#+begin_src quote
+ ActiveRecord::AssociationTypeMismatch:
+       Promotion(#70344446051980) expected, got #<InstanceDouble(Promotion) (anonymous)> which is an instance of RSpec::Mocks::InstanceVerifyingDouble(#70344509879160)
+#+end_src
+
+**** Solution
+
+Use allow-receive pattern instead of using instance spies
