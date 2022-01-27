@@ -76,3 +76,19 @@ The initalization method was deleted and the rails default was used
 commit: [[https://github.com/1000Bulbs/strangler/pull/2036/commits/daa7594069219406bf241bae8960c867489990bb][9f5f2b]]
 
 Use allow-receive pattern instead of using instance spies
+
+* More failing specs Thu Jan 27 2022
+#+begin_src
+Failures:
+
+  1) Cart behaves like coupon_discountable #promo_code for new promotions returns a new promo code model
+     Failure/Error: @new_promo_code ||= ::PromotionCode.new(new_promotion)
+
+     ArgumentError:
+       When assigning attributes, you must pass a hash as an argument.
+
+
+#+end_src
+
+** Solution
+commit: 09214d
