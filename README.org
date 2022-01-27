@@ -45,3 +45,8 @@ Your user account isn't allowed to install to the system RubyGems.
 #+end_src
 **** just enter your mac password?
 [[./current.org]]
+
+
+* Tools
+
+ - [[https://github.com/wouterdebie/i2cssh][i2cssh]] tool for connecting over ssh to multiple machines for use with iTerm2
