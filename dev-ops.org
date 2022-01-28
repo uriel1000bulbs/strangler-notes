@@ -1,0 +1,10 @@
+#+TITLE: Dev Ops
+
+* Resque
+** Cycling workers
+
+Run the following code on *each* strangler machine:
+#+begin_src sh
+systemctl stop  strangler-resque-worker-<RESQUE-WORKER-NUMBER>
+systemctl start strangler-resque-worker-<RESQUE-WORKER-NUMBER>
+#+end_src
