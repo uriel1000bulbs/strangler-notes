@@ -131,6 +131,6 @@ static -> strangler
 #+end_src
 
 
-[[file:img/Arch.png][!arch]]
+![file:img/Arch.png](arch)
 #+RESULTS:
 [[file:/var/folders/cp/j2rkr3690yx0rzw59tly31v80000gn/T/babel-tKTDPR/plantuml-DeMB42.png]]
