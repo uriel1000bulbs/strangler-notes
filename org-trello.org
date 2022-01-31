@@ -22,4 +22,4 @@
 :orgtrello_id: 61f7353724684d48cfdf3635
 :orgtrello_local_checksum: 6761e596a2e30ecdb913e70d6afb1bb543cad77c5d6aa1559edacfa4f719da37
 :END:
-  Finish checkout stuff for promos
+Finish checkout stuff for promos

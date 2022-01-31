@@ -1,6 +1,9 @@
 #+TITLE: Promos
 ticket: https://trello.com/c/KcXfoTmR
-
+card: [[file:org-trello.org::*Checkout][Check out]]
+* Standups
+** Mon Jan 31 2022
+- Added a link to csv
 
 * Failing specs
 
@@ -92,3 +95,42 @@ Failures:
 
 ** Solution
 commit: 09214d
+
+
+
+* charts
+
+#+begin_src plantuml :file ./img/Arch.png
+
+[MySql] as mysql
+() "MySQL Conn" as mysqlconn
+[SysPro] as syspro
+
+package "Website" {
+  [Strangler]    as strangler
+  [1KB]          as 1kb
+  [redis]        as web_redis
+}
+
+package "Services" {
+  [Eden Search]  as eden
+  [Static Pages] as static
+  [Wyatt] as wyat
+}
+
+ mysqlconn - mysql : 192.168.50.37
+
+
+
+eden -> strangler
+strangler -> eden
+
+
+static -> strangler
+
+#+end_src
+
+
+[[file:img/Arch.png][!arch]]
+#+RESULTS:
+[[file:/var/folders/cp/j2rkr3690yx0rzw59tly31v80000gn/T/babel-tKTDPR/plantuml-DeMB42.png]]
