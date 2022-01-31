@@ -1,0 +1,25 @@
+:PROPERTIES:
+#+PROPERTY: board-name work
+#+PROPERTY: board-id 61f72d212263136bd9adfc08
+#+PROPERTY: Done 61f72d212263136bd9adfc0b
+#+PROPERTY: Doing 61f72d212263136bd9adfc0a
+#+PROPERTY: To-Do 61f72d212263136bd9adfc09
+#+TODO: To-Do Doing | Done
+#+PROPERTY: orgtrello_user_uriel781 55e5b46c1ba3c3f816076298
+#+PROPERTY: :blue
+#+PROPERTY: :purple
+#+PROPERTY: :red
+#+PROPERTY: :orange
+#+PROPERTY: :yellow
+#+PROPERTY: :green
+#+PROPERTY: orgtrello_user_me uriel781
+:END:
+
+
+
+* Doing Checkout
+:PROPERTIES:
+:orgtrello_id: 61f7353724684d48cfdf3635
+:orgtrello_local_checksum: 6761e596a2e30ecdb913e70d6afb1bb543cad77c5d6aa1559edacfa4f719da37
+:END:
+  Finish checkout stuff for promos
