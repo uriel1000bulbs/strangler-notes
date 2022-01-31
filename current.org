@@ -98,39 +98,15 @@ commit: 09214d
 
 
 
-* charts
+* diagrams
 
-#+begin_src plantuml :file ./img/Arch.png
+#+begin_src plantuml :file ./img/mm-checkout-add-to-cart.png
+@startmindmap
++ Checkout button (Click)
+++ Carts Controller
 
-[MySql] as mysql
-() "MySQL Conn" as mysqlconn
-[SysPro] as syspro
-
-package "Website" {
-  [Strangler]    as strangler
-  [1KB]          as 1kb
-  [redis]        as web_redis
-}
-
-package "Services" {
-  [Eden Search]  as eden
-  [Static Pages] as static
-  [Wyatt] as wyat
-}
-
- mysqlconn - mysql : 192.168.50.37
-
-
-
-eden -> strangler
-strangler -> eden
-
-
-static -> strangler
-
+@endmindmap
 #+end_src
 
-
-![[file:img/Arch.png][!arch]]
 #+RESULTS:
-[[file:/var/folders/cp/j2rkr3690yx0rzw59tly31v80000gn/T/babel-tKTDPR/plantuml-DeMB42.png]]
+[[file:./img/mm-checkout-add-to-cart.png]]
