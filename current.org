@@ -108,5 +108,7 @@ commit: 09214d
 @endmindmap
 #+end_src
 
+[[./img/mm-checkout-add-to-cart.png][checkout mind map]]
+
 #+RESULTS:
 [[file:./img/mm-checkout-add-to-cart.png]]
