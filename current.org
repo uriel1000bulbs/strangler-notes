@@ -100,15 +100,32 @@ commit: 09214d
 
 * diagrams
 
+** Add to cart
 #+begin_src plantuml :file ./img/mm-checkout-add-to-cart.png
 @startmindmap
-+ Checkout button (Click)
-++ Carts Controller
-
+,* Checkout button (Click)
+,** Carts Controller
+,*** Carts
+,****_ update
+,****_ refresh_product_prices!
+,****_ apply_pricing_agreements!
+,****_ apply_promotion!
+,***** apply_promotion!
+,****** update(promo params)
+,****** cart.apply_promotion!
+,******* CouponDiscountable.apply_promotion!
+,******** ApplyPromotion
+,****_ update_shipping!
+,****_ apply_discounts!!
 @endmindmap
 #+end_src
 
-[[./img/mm-checkout-add-to-cart.png][checkout mind map]]
-
 #+RESULTS:
 [[file:./img/mm-checkout-add-to-cart.png]]
+
+[[file:~/repo/strangler/app/controllers/carts_controller.rb][CartsController]]
+
+[[./img/mm-checkout-add-to-cart.png][checkout mind map]]
+*** Files
+[[file:~/repo/strangler/app/controllers/carts_controller.rb][CartsController]]
+[[file:~/repo/strangler/app/services/apply_promotion.rb::class ApplyPromotion < ApplicationService][ApplyPromotion]] service
